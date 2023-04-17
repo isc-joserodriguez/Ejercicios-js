@@ -115,4 +115,35 @@ function ordenarArray(array) {
 
 //ordenarArray([2, 8, 3, 1, 19, 100, 10000000]);
 
+//! Ejercicio 9
 
+function fizzBuzz() {
+  for (var i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log("FizzBuzz");
+    } else if (i % 3 === 0) {
+      console.log("Fizz");
+    } else if (i % 5 === 0) {
+      console.log("Buzz");
+    } else {
+      console.log(i);
+    }
+  }
+}
+
+//fizzBuzz();
+
+function fizzBuzzOpt() {
+  for (var i = 1; i <= 100; i++) {
+    var cad = "";
+    if (i % 3 === 0) {
+      cad += "Fizz";
+    }
+    if (i % 5 === 0) {
+      cad += "Buzz";
+    }
+    console.log( cad || i);
+  }
+}
+
+fizzBuzzOpt();
