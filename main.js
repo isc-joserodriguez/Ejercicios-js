@@ -27,3 +27,44 @@ function esMayorDeEdad(nombre, edad) {
 
 //esMayorDeEdad("Mario", 15);
 
+//! Ejercicio 3.
+
+function promedio5Numeros(num1, num2, num3, num4, num5) {
+  const suma = num1 + num2 + num3 + num4 + num5;
+  const promedio = suma / 5;
+  console.log(
+    promedio >= 70
+      ? "Aprobaste,tu promedio es de: " + promedio
+      : "No aprobaste,tu promedio es de: " + promedio
+  );
+}
+
+//promedio5Numeros(100, 100, 50, 50, 50);
+
+//! Ejercicio 4.
+
+function adivinaElNumero() {
+  const numeroSecreto = Math.ceil(Math.random() * 10);
+  var intentos = 0;
+  while (intentos < 3) {
+    var numeroUsuario = Number(prompt("Adivina el número generado"));
+
+    if (numeroSecreto === numeroUsuario) {
+      break;
+    }
+
+    console.log(
+      numeroSecreto > numeroUsuario
+        ? "El número generado es mayor a " + numeroUsuario
+        : "El número generado es menor a " + numeroUsuario
+    );
+    intentos++;
+  }
+  console.log(
+    intentos === 3
+      ? "Perdiste, el número secreto era: " + numeroSecreto
+      : "Ganaste, el número secreto era: " + numeroSecreto
+  );
+}
+
+adivinaElNumero();
