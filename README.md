@@ -17,12 +17,10 @@
    3. Permitir que el usuario adivine hasta 3 veces.
    4. Si el usuario adivina el número, mostrar un mensaje de felicitaciones. Si no lo adivina en tres intentos, mostrar un mensaje que indique que perdió.
 5. N números pares
-
    1. Crear una función que reciba como parámetro un número.
    2. Tomando este número de referencia, vamos a imprimir los primeros "n" números pares
 
 6. Números impares entre 2 números
-
    1. Crear una función que reciba dos números como parámetros.
    2. Vamos a imprimir todos los números impares que existan entre estos 2 números (incluyendolos)
 

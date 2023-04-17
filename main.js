@@ -67,4 +67,30 @@ function adivinaElNumero() {
   );
 }
 
-adivinaElNumero();
+// adivinaElNumero();
+
+//! Ejercicio 5
+function primerosNumerosPares(numero) {
+  var salida = "";
+  for (var i = 1, contador = 0; contador < numero; i++) {
+    if (i % 2 === 0) {
+      salida += i + ", ";
+      console.log(i);
+      contador++;
+    }
+  }
+  console.log(salida);
+}
+
+// primerosNumerosPares(10);
+
+//! Ejercicio 6
+function imparesEntreInicioYFin(inicio, fin){
+    for(var i = inicio; i<=fin; i++){
+        if(i%2!==0){
+            console.log(i);
+        }
+    }
+}
+
+// imparesEntreInicioYFin(5, 9);
