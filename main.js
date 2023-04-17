@@ -85,12 +85,34 @@ function primerosNumerosPares(numero) {
 // primerosNumerosPares(10);
 
 //! Ejercicio 6
-function imparesEntreInicioYFin(inicio, fin){
-    for(var i = inicio; i<=fin; i++){
-        if(i%2!==0){
-            console.log(i);
-        }
+function imparesEntreInicioYFin(inicio, fin) {
+  for (var i = inicio; i <= fin; i++) {
+    if (i % 2 !== 0) {
+      console.log(i);
     }
+  }
 }
 
 // imparesEntreInicioYFin(5, 9);
+
+//! Ejercicio 7
+function generarTablaMultiplicar(numero) {
+  for (var i = 1; i <= 10; i++) {
+    console.log(numero + " * " + i + " = " + numero * i);
+  }
+}
+
+//generarTablaMultiplicar(30);
+
+//! Ejercicio 8
+function ordenarArray(array) {
+  console.log(
+    array.sort(function (a, b) {
+      return a - b;
+    })
+  );
+}
+
+//ordenarArray([2, 8, 3, 1, 19, 100, 10000000]);
+
+
